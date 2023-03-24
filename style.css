@@ -44,3 +44,102 @@ a {
     color: var(--secondary-color);
     transition: all 300ms ease;
 }
+
+h1, h2, h3, h4 {
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-size: 2rem;
+}
+.btn {
+    padding: 5px 20px;
+    font-weight: 600;
+    color: var(--alternate-color);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.btn:hover {
+    background-color: var(--alternate-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--alternate-color);
+}
+
+section {
+    padding: 6rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/* END OF GENERAL STYLING */
+
+nav button {
+    display: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav, ul, .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.logo:hover {
+    color: var(--primary-color);
+}
+
+nav ul a.active {
+    border-bottom: 3px solid var(--secondary-color);  
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+/* END OF HEADER STYLING */
+
+section[id="home"] .container {
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr)
+    minmax(min-content, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+article[class="info"] .delivery {
+    background-color: var(--primary-color);
+    width: max-content;
+    padding: 0px 10px;
+    margin-bottom: 1rem;
+
+}
+
+article[class="info"] p {
+    font-size: larger;
+    margin: 1rem auto;
+}
+/* END OF HOME STYLING */

@@ -73,12 +73,12 @@ h1 {
 }
 
 section {
-    padding: 6rem 0;
+    padding: 8rem 0;
 }
 
 section h2 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 /* END OF GENERAL STYLING */
 
@@ -143,3 +143,42 @@ article[class="info"] p {
     margin: 1rem auto;
 }
 /* END OF HOME STYLING */
+
+section[id="phones"] .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+
+section[id="phones"] h3 {
+    padding: 1rem;
+}
+/* END OF PHONES STYLING */
+
+section[id="refurbished"] .container {
+    background-image: url("images/pexels-david-bartus-963278.avif");
+    background-color: var(--alternate-color);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section[id="refurbished"] .text, .p-text, .fa-money-check-dollar, 
+.fa-screwdriver-wrench, .fa-globe {
+    color: var(--alternate-color);
+}
+
+section[id="refurbished"] .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+article[class="refurb"] {
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    text-align: center;
+}

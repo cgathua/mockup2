@@ -25,12 +25,12 @@
 <body>
     <div class="container">
         <header>
-            <a href="#about" class="logo">LOGO</a>
+            <a href="#home" class="logo">LOGO</a>
             <nav>
                 <ul>
-                    <li><a href="home" class="active">Home</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#phones">Phones</a></li>
-                    <li><a href="#why_buy_refurbished">Why Buy Refurbished?</a></li>
+                    <li><a href="#refurbished">Why Buy Refurbished?</a></li>
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -54,9 +54,9 @@
                     <i class="fa-solid fa-truck"></i>
                 </div>
                 <h1>Refurbished Phones</h1>
-                <p>The online store, for refurbished iphones. 90 day warranty included.</p>
+                <p>The online store for refurbished iphones, 90 day warranty included.</p>
                 <div>
-                    <a href="products" class="btn btn-primary">See Products</a>
+                    <a href="#phones" class="btn btn-primary">See Products</a>
                 </div>
             </article>
             <aside class="home-image">
@@ -69,9 +69,59 @@
     <section id="phones">
         <h2>Phones</h2>
         <div class="container">
-
+            <figure class="iphone">
+                <picture class="image">
+                    <source src="images/pexels-thiago-japyassu-1069798.avif" type="image/avif">
+                    <img src="images/pexels-thiago-japyassu-1069798.jpg" width="640" height="427" alt="iphone x" loading="lazy">
+                </picture>
+                <h3>iphone X</h3>
+                <figcaption><a href="#" class="btn btn-primary">Buy Now</a></figcaption>
+            </figure>
+            <!--END OF FIRST PHONE-->
+            <figure class="iphone">
+                <picture class="image">
+                    <source src="images/pexels-brett-jordan-2643698.avif" type="image/avif">
+                    <img src="images/pexels-brett-jordan-2643698.jpg" width="640" height="427" alt="iphone 6" loading="lazy">
+                </picture>
+                <h3>iphone 6</h3>
+                <figcaption><a href="#" class="btn btn-primary">Buy Now</a></figcaption>   
+            </figure>
+            <!--END OF SECOND PHONE-->
+            <figure class="iphone">
+                <picture class="image">
+                    <source src="images/pexels-pixabay-257923.avif" type="image/avif">
+                    <img src="images/pexels-pixabay-257923.jpg" width="640" height="427" alt="iphone 5" loading="lazy">
+                </picture>
+                <h3>iphone 5</h3>
+                <figcaption><a href="#" class="btn btn-primary">Buy Now</a></figcaption>    
+            </figure>
+            <!--END OF THIRD PHONE-->
         </div>
     </section>
-    
+    <!--END OF PHONES SECTION-->  
+    <section id="refurbished">
+        <h2>Why Buy Refurbished?</h2>
+        <div class="container">
+            <article class="refurb">
+                <i class="fa-solid fa-money-check-dollar fa-xl" aria-hidden="true"></i>
+                <h3 class="text">Save Money</h3>
+                <p class="p-text">It's cheaper to buy a refurbished phone, than a new one.</p>
+            </article>
+            <!--END OF FIRST ARTICLE-->
+            <article class="refurb">
+                <i class="fa-solid fa-screwdriver-wrench fa-xl" aria-hidden="true"></i>
+                <h3 class="text">Peace Of Mind</h3>
+                <p class="p-text">It's been professionally checked and repaired.</p>
+            </article>
+            <!--END OF SECOND ARTICLE-->
+            <article class="refurb">
+                <i class="fa-solid fa-globe fa-xl" aria-hidden="true"></i>
+                <h3 class="text">Less E-waste</h3>
+                <p class="p-text">It helps reduce e-waste, which is good for the planet.</p>
+            </article>
+            <!--END OF THIRD ARTICLE-->
+        </div>
+    </section>
+    <!--END OF REFURBISHED SECTION-->
 </body>
 </html>

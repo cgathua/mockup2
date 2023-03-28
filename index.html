@@ -31,7 +31,7 @@
                     <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#phones">Phones</a></li>
                     <li><a href="#refurbished">Why Buy Refurbished?</a></li>
-                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#faqs">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="icons">
@@ -123,5 +123,97 @@
         </div>
     </section>
     <!--END OF REFURBISHED SECTION-->
+    <section id="faqs">
+        <h2>FAQ</h2>
+        <div class="container">
+            <article class="faq">
+                <div class="question">
+                    <h3>Is an extended warranty available?</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>Yes, depending on the device, options to extend the warranty
+                        beyond the included 90 days, are available at checkout.
+                    </p>
+                </div>
+            </article>
+            <!--END OF FIRST QUESTION-->
+            <article class="faq">
+                <div class="question">
+                    <h3>Are the devices factory refurbished?</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>No, the phones are refurbished by our highly trained technicians.</p>
+                </div>
+            </article>
+            <!--END OF SECOND QUESTION-->
+            <article class="faq">
+                <div class="question">
+                    <h3>Are the parts used in repairs new?</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>Yes, all parts used in repairs are new oem.</p>
+                </div>
+            </article>
+            <!--END OF THIRD QUESTION-->
+            <article class="faq">
+                <div class="question">
+                    <h3>Do you accept returns?</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>All sales are final, unless you receive a non-working unit.</p>
+                </div>
+            </article>
+            <!--END OF FOURTH QUESTION-->   
+        </div>
+    </section>
+    <!--END OF FAQS SECTION-->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="container">
+            <form action="contact-form" method="post">
+                <fieldset>
+                    <legend>
+                        <label for="first name"> First Name <input type="text" name="First Name" placeholder="First Name" required></label>
+                        <label for="last name"> Last Name <input type="text" name="Last Name" placeholder="Last Name" required></label>
+                        <label for="email"> Email <input type="email" name="Email Address" placeholder="Enter Your Email" required></label>
+                    </legend>
+                </fieldset>
+                <fieldset>
+                    <label for="message"> Message
+                        <textarea rows="7" placeholder="Message....."></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" id="submit" value="Submit" class="btn btn-primary">
+            </form>
+            <!--END OF CONTACT FORM-->
+            <aside class="contact">
+                <picture class="aside_image">
+                    <img src="./images/undraw_mailbox_re_dvds.svg" width="576" height="494" alt="mail box">
+                </picture>  
+                <h3>Contact Info</h3>
+                <p>Please feel free to reach out to us, for any queries.</p> 
+                <ul class="contact_details">
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <h4>(404)-105-1705</h4>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <h4>support@logo.com</h4>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h4>Atlanta, Georgia</h4>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
 </body>
 </html>

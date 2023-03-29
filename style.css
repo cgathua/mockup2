@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
 :root {
     --primary-color: #BFBFBF;
     --secondary-color: #0F0F0F;
@@ -52,6 +54,7 @@ h1, h2, h3, h4 {
 h1 {
     font-size: 2rem;
 }
+
 .btn {
     padding: 5px 20px;
     font-weight: 600;
@@ -73,7 +76,7 @@ h1 {
 }
 
 section {
-    padding: 8rem 0;
+    padding: 5rem 0;
 }
 
 section h2 {

@@ -11,9 +11,6 @@
     <meta name="description" content="This is a landing page project, made by cgathua">
 
     <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 
     <!--FONT AWESOME ICONS-->
     <script src="https://kit.fontawesome.com/4a00a82b9f.js" crossorigin="anonymous"></script>
@@ -35,9 +32,9 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="icons">
-                    <a><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a><i class="fa-solid fa-cart-shopping"></i></a>
-                    <a><i class="fa-solid fa-tag"></i></a>
+                    <a href="#" aria-label="magnifying glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" aria-label="shopping cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#" aria-label="sale tag"><i class="fa-solid fa-tag"></i></a>
                 </div>
                 <button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
                 <button id="close-btn"><i class="fa-solid fa-xmark"></i></button>
@@ -71,7 +68,7 @@
         <div class="container">
             <figure class="iphone">
                 <picture class="image">
-                    <source src="images/pexels-thiago-japyassu-1069798.avif" type="image/avif">
+                    <source srcset="images/pexels-thiago-japyassu-1069798.avif" type="image/avif">
                     <img src="images/pexels-thiago-japyassu-1069798.jpg" width="640" height="427" alt="iphone x" loading="lazy">
                 </picture>
                 <h3>iphone X</h3>
@@ -80,8 +77,8 @@
             <!--END OF FIRST PHONE-->
             <figure class="iphone">
                 <picture class="image">
-                    <source src="images/pexels-brett-jordan-2643698.avif" type="image/avif">
-                    <img src="images/pexels-brett-jordan-2643698.jpg" width="640" height="427" alt="iphone 6" loading="lazy">
+                    <source srcset="./images/pexels-brett-jordan-2643698.avif" type="image/avif">
+                    <img src="./images/pexels-brett-jordan-2643698.jpg" width="640" height="427" alt="iphone 6" loading="lazy">
                 </picture>
                 <h3>iphone 6</h3>
                 <figcaption><a href="#" class="btn btn-primary">Buy Now</a></figcaption>   
@@ -89,13 +86,40 @@
             <!--END OF SECOND PHONE-->
             <figure class="iphone">
                 <picture class="image">
-                    <source src="images/pexels-pixabay-257923.avif" type="image/avif">
-                    <img src="images/pexels-pixabay-257923.jpg" width="640" height="427" alt="iphone 5" loading="lazy">
+                    <source srcset="./images/pexels-pixabay-257923.avif" type="image/avif">
+                    <img src="./images/pexels-pixabay-257923.jpg" width="640" height="427" alt="iphone 5" loading="lazy">
                 </picture>
                 <h3>iphone 5</h3>
                 <figcaption><a href="#" class="btn btn-primary">Buy Now</a></figcaption>    
             </figure>
             <!--END OF THIRD PHONE-->
+            <figure class="iphone">
+                <picture class="image">
+                    <source srcset="./images/pexels-rajat-yadav-15458049.avif" type="image/avif">
+                    <img src="./images/pexels-rajat-yadav-15458049.jpg" width="640" height="427" alt="iphone pro" loading="lazy">
+                </picture>
+                <h3>iphone 13</h3>
+                <figcaption><a href="#" class="btn btn-primary">Buy Now</a></figcaption>    
+            </figure>
+            <!--END OF FOURTH PHONE-->
+            <figure class="iphone">
+                <picture class="image">
+                    <source srcset="./images/pexels-efrem-efre-15876529.avif" type="image/avif">
+                    <img src="./images/pexels-efrem-efre-15876529.jpg" width="640" height="427" alt="iphone 14" loading="lazy">
+                </picture>
+                <h3>iphone 14</h3>
+                <figcaption><a href="#" class="btn btn-primary">Buy Now</a></figcaption>   
+            </figure>
+            <!---END OF FIFTH PHONE-->
+            <figure class="iphone">
+                <picture class="image">
+                    <source srcset="./images/pexels-nacevski-nikola-13939986.avif">
+                    <img src="./images/pexels-nacevski-nikola-13939986.jpg" width="640" height="427" alt="iphone pro" loading="lazy">
+                </picture>
+                <h3>iphone pro</h3>
+                <figcaption><a href="#" class="btn btn-primary">Buy Now</a></figcaption>
+            </figure>
+            <!--END OF SIXTH PHONE-->
         </div>
     </section>
     <!--END OF PHONES SECTION-->  
@@ -167,7 +191,26 @@
                     <p>All sales are final, unless you receive a non-working unit.</p>
                 </div>
             </article>
-            <!--END OF FOURTH QUESTION-->   
+            <!--END OF FOURTH QUESTION--> 
+            <article class="faq">
+                <div class="question">
+                    <h3>Are the phones carrier locked?</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>No, all phones are unlocked and can be used with any provider.</p>
+                </div>
+            </article>
+            <!--END OF FIFTH QUESTION-->
+            <article class="faq">
+                <div class="question">
+                    <h3>How long does shipping take?</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>Orders are shipped within 24hrs via Free Ground shipping or USPS.</p>
+                </div>
+            </article>
         </div>
     </section>
     <!--END OF FAQS SECTION-->

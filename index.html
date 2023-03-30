@@ -31,10 +31,9 @@
                     <li><a href="#faqs">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="icons">
-                    <a href="#" aria-label="magnifying glass"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href="#" aria-label="shopping cart"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <a href="#" aria-label="sale tag"><i class="fa-solid fa-tag"></i></a>
+                <div class="cart-btn">
+                    <a href="#" aria-label="shopping cart"><i class="fa-solid fa-cart-plus fa-xl"></i></a>
+                    <div class="cart-items">0</div>
                 </div>
                 <button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
                 <button id="close-btn"><i class="fa-solid fa-xmark"></i></button>
@@ -66,58 +65,64 @@
     <section id="phones">
         <h2>Phones</h2>
         <div class="container">
-            <figure class="iphone">
-                <picture class="image">
-                    <source srcset="images/pexels-thiago-japyassu-1069798.avif" type="image/avif">
-                    <img src="images/pexels-thiago-japyassu-1069798.jpg" width="640" height="427" alt="iphone x" loading="lazy">
-                </picture>
+            <figure class="product">
+                <div class="img-container">
+                    <source srcset="images/pexels-thiago-japyassu-1069798.avif" type="image/avif" class="product-img">
+                    <img src="images/pexels-thiago-japyassu-1069798.jpg" width="640" height="427" alt="iphone x" loading="lazy" class="product-img">
+                    <button class="bag-btn" data-id="1"><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+                </div>
                 <h3>iphone X</h3>
-                <figcaption><a href="#" class="btn btn-primary">Buy Now</a></figcaption>
+                <figcaption><a href="#" class="btn btn-primary">$699</a></figcaption>
             </figure>
             <!--END OF FIRST PHONE-->
-            <figure class="iphone">
-                <picture class="image">
-                    <source srcset="./images/pexels-brett-jordan-2643698.avif" type="image/avif">
-                    <img src="./images/pexels-brett-jordan-2643698.jpg" width="640" height="427" alt="iphone 6" loading="lazy">
-                </picture>
+            <figure class="product">
+                <div class="img-container">
+                    <source srcset="./images/pexels-brett-jordan-2643698.avif" type="image/avif" class="product-img">
+                    <img src="./images/pexels-brett-jordan-2643698.jpg" width="640" height="427" alt="iphone 6" loading="lazy" class="product-img">
+                    <button class="bag-btn" data-id="1"><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+                </div>
                 <h3>iphone 6</h3>
-                <figcaption><a href="#" class="btn btn-primary">Buy Now</a></figcaption>   
+                <figcaption><a href="#" class="btn btn-primary">$299</a></figcaption>   
             </figure>
             <!--END OF SECOND PHONE-->
-            <figure class="iphone">
-                <picture class="image">
-                    <source srcset="./images/pexels-pixabay-257923.avif" type="image/avif">
-                    <img src="./images/pexels-pixabay-257923.jpg" width="640" height="427" alt="iphone 5" loading="lazy">
-                </picture>
+            <figure class="product">
+                <div class="img-container">
+                    <source srcset="./images/pexels-pixabay-257923.avif" type="image/avif" class="product-img">
+                    <img src="./images/pexels-pixabay-257923.jpg" width="640" height="427" alt="iphone 5" loading="lazy" class="product-img">
+                    <button class="bag-btn" data-id="1"><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+                </div>
                 <h3>iphone 5</h3>
-                <figcaption><a href="#" class="btn btn-primary">Buy Now</a></figcaption>    
+                <figcaption><a href="#" class="btn btn-primary">$199</a></figcaption>    
             </figure>
             <!--END OF THIRD PHONE-->
-            <figure class="iphone">
-                <picture class="image">
-                    <source srcset="./images/pexels-rajat-yadav-15458049.avif" type="image/avif">
-                    <img src="./images/pexels-rajat-yadav-15458049.jpg" width="640" height="427" alt="iphone pro" loading="lazy">
-                </picture>
+            <figure class="product">
+                <div class="img-container">
+                    <source srcset="./images/pexels-rajat-yadav-15458049.avif" type="image/avif" class="product-img">
+                    <img src="./images/pexels-rajat-yadav-15458049.jpg" width="640" height="427" alt="iphone pro" loading="lazy" class="product-img">
+                    <button class="bag-btn" data-id="1"><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+                </div>
                 <h3>iphone 13</h3>
-                <figcaption><a href="#" class="btn btn-primary">Buy Now</a></figcaption>    
+                <figcaption><a href="#" class="btn btn-primary">$399</a></figcaption>    
             </figure>
             <!--END OF FOURTH PHONE-->
-            <figure class="iphone">
-                <picture class="image">
-                    <source srcset="./images/pexels-efrem-efre-15876529.avif" type="image/avif">
-                    <img src="./images/pexels-efrem-efre-15876529.jpg" width="640" height="427" alt="iphone 14" loading="lazy">
-                </picture>
+            <figure class="product">
+                <div class="img-container">
+                    <source srcset="./images/pexels-efrem-efre-15876529.avif" type="image/avif" class="product-img">
+                    <img src="./images/pexels-efrem-efre-15876529.jpg" width="640" height="427" alt="iphone 14" loading="lazy" class="product-img">
+                    <button class="bag-btn" data-id="1"><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+                </div>
                 <h3>iphone 14</h3>
-                <figcaption><a href="#" class="btn btn-primary">Buy Now</a></figcaption>   
+                <figcaption><a href="#" class="btn btn-primary">$599</a></figcaption>   
             </figure>
             <!---END OF FIFTH PHONE-->
-            <figure class="iphone">
-                <picture class="image">
-                    <source srcset="./images/pexels-nacevski-nikola-13939986.avif">
-                    <img src="./images/pexels-nacevski-nikola-13939986.jpg" width="640" height="427" alt="iphone pro" loading="lazy">
-                </picture>
+            <figure class="product">
+                <div class="img-container">
+                    <source srcset="./images/pexels-nacevski-nikola-13939986.avif" class="product-img">
+                    <img src="./images/pexels-nacevski-nikola-13939986.jpg" width="640" height="427" alt="iphone pro" loading="lazy" class="product-img">
+                    <button class="bag-btn" data-id="1"><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+                </div>
                 <h3>iphone pro</h3>
-                <figcaption><a href="#" class="btn btn-primary">Buy Now</a></figcaption>
+                <figcaption><a href="#" class="btn btn-primary">$799</a></figcaption>
             </figure>
             <!--END OF SIXTH PHONE-->
         </div>
@@ -217,7 +222,7 @@
     <section id="contact">
         <h2>Contact</h2>
         <div class="container">
-            <form action="contact-form" method="post">
+            <form action="contact-form" method="post" class="form">
                 <fieldset>
                     <legend>
                         <label for="first name"> First Name <input type="text" name="First Name" placeholder="First Name" required></label>
@@ -256,7 +261,32 @@
             </aside>
         </div>
     </section>
-
+    <!--END OF CONTACT SECTION-->
+    <footer>
+        <section id="footer-socials" aria-label="social media">
+            <ul class="footer-icons">
+                <li><a href="#" aria-label="facebook"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
+                <li><a href="#" aria-label="twitter"><i class="fa-brands fa-twitter fa-lg"></i></a></li>
+                <li><a href="#" aria-label="instagram"><i class="fa-brands fa-instagram fa-lg"></i></a></li>
+                <li><a href="#" aria-label="linkedin"><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
+                <li><a href="#" aria-label="youtube"><i class="fa-brands fa-youtube fa-lg"></i></a></li>
+                <li><a href="#home" aria-label="home"><i class="fa-solid fa-house fa-lg"></i></a></li>
+            </ul>
+        </section>
+        <!--END OF SOCIAL MEDIA SECTION-->
+        <section id="footer-legal" aria-label="legal">
+            <small>
+                <ul class="footer-legal-items">
+                   <li><a href="#">Terms &amp; Conditions</a></li>
+                   <li><a href="#">Privacy Policy</a></li>
+                   <li>&copy; Copyright 2023 Logo</li>
+                </ul>
+            </small>
+        </section>
+        <!--END OF LEGAL SECTION-->
+    </footer> 
+    <!--END OF FOOTER SECTION-->  
+    
     <script src="./index.js"></script>
 </body>
 </html>

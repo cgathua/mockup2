@@ -7,6 +7,7 @@
     --alternate-color: #fff;
     --desktop-container: 84%;
     --mobile-container: 92%;
+    --transition: all 0.3s linear;
 }
 
 * {
@@ -44,7 +45,7 @@ img {
 
 a {
     color: var(--secondary-color);
-    transition: all 300ms ease;
+    transition: var(--transition);
 }
 
 h1, h2, h3, h4 {
@@ -57,11 +58,10 @@ h1 {
 
 .btn {
     padding: 5px 20px;
-    font-weight: 600;
     color: var(--alternate-color);
     border: 1px solid transparent;
     cursor: pointer;
-    transition: all 300ms ease;
+    transition: var(--transition);
 }
 
 .btn:hover {
@@ -100,11 +100,12 @@ header {
     padding: 1rem;
 }
 
-nav, ul, .icons {
+nav, ul, .cart-btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    padding: 0 1rem; /*to move cart from edge */
 }
 
 .logo {
@@ -122,6 +123,18 @@ nav ul a.active {
 
 nav a:hover {
     color: var(--primary-color);
+}
+
+.cart-btn {
+    position: relative;
+}
+.cart-items {
+    position: absolute;
+    top: -20px;
+    right: -4px;
+    background-color: var(--primary-color);
+    padding: 0 5px;
+    border-radius: 30%;
 }
 /* END OF HEADER STYLING */
 
@@ -156,6 +169,44 @@ section[id="phones"] .container {
 
 section[id="phones"] h3 {
     padding: 1rem;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.bag-btn {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    background-color: var(--primary-color);
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    transition: var(--transition);
+    transform: translateX(101%);
+    cursor: pointer;
+}
+
+.bag-btn:hover {
+    color: var(--alternate-color);
+}
+
+.fa-cart-shopping {
+    margin-right: 0.5rem;
+}
+
+.img-container:hover .bag-btn {
+    transform: translateX(0);
+}
+
+.product-img {
+    transition: var(--transition);
+}
+
+.img-container:hover .product-img {
+    opacity: 0.5;
 }
 /* END OF PHONES STYLING */
 
@@ -232,7 +283,7 @@ label {
     margin: 0.5rem 0;
 }
 
-form {
+.form {
     margin: 0 auto;
     max-width: 500px;
     min-width: 300px;
@@ -276,15 +327,54 @@ input[type="submit"] {
     min-width: 300px;
     cursor: pointer;
 }
+/* END OF CONTACT STYLING */
 
+footer a {
+    color: var(--secondary-color);
+}
 
+footer a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+section[id="footer-socials"]{
+    padding: 0 1.875rem 1.25rem;
+}
 
+ul[class="footer-icons"] {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--secondary-color);
+}
 
+ul[class="footer-icons"] li {
+    margin: 0.5rem;
+}
 
+/* LEGAL SECTION */
+section[id="footer-legal"] a {
+    color: var(--color-secondary);
+}
 
+section[id="footer-legal"] {
+    padding: 0.9375rem 1.875rem;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    
+}
 
+ul[class="footer-legal-items"] {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+ul[class="footer-legal-items"] li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;   
+}
 
-
-
-
+.footer-legal-items li:nth-of-type(2) {
+    flex: 1;
+}

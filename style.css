@@ -5,8 +5,8 @@
     --secondary-color: #0F0F0F;
     --tertiary-color: #575757;
     --alternate-color: #fff;
-    --desktop-container: 84%;
-    --mobile-container: 92%;
+    --desktop-container: 80%;
+    --mobile-container: 90%;
     --transition: all 0.3s linear;
 }
 
@@ -83,29 +83,35 @@ section h2 {
     text-align: center;
     margin-bottom: 4rem;
 }
-/* END OF GENERAL STYLING */
-
-nav button {
+ 
+#menu-btn,#close-btn,#navbar2,nav svg {
     display: none;
 }
+/* END OF GENERAL STYLING */
+
 
 header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
     padding: 1rem;
 }
 
-nav, ul, .cart-btn {
+#navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 0 1rem; /*to move cart from edge */
+}
+
+#navbar li {
+    position: relative; /* this is for active list */
 }
 
 .logo {
@@ -117,24 +123,19 @@ nav, ul, .cart-btn {
     color: var(--primary-color);
 }
 
-nav ul a.active {
-    border-bottom: 3px solid var(--secondary-color);  
-}
-
-nav a:hover {
+#navbar li a:hover,
+#navbar li a.active {
     color: var(--primary-color);
 }
 
-.cart-btn {
-    position: relative;
-}
-.cart-items {
-    position: absolute;
-    top: -20px;
-    right: -4px;
+#navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
     background-color: var(--primary-color);
-    padding: 0 5px;
-    border-radius: 30%;
+    position: absolute;
+    bottom: -2px;
+    left: 20px;
 }
 /* END OF HEADER STYLING */
 
@@ -151,7 +152,6 @@ article[class="info"] .delivery {
     width: max-content;
     padding: 0px 10px;
     margin-bottom: 1rem;
-
 }
 
 article[class="info"] p {
@@ -193,9 +193,6 @@ section[id="phones"] h3 {
     color: var(--alternate-color);
 }
 
-.fa-cart-shopping {
-    margin-right: 0.5rem;
-}
 
 .img-container:hover .bag-btn {
     transform: translateX(0);
@@ -287,10 +284,11 @@ label {
 .form {
     margin: 0 auto;
     max-width: 500px;
-    min-width: 300px;
+    min-width: 200px;
     width: 60vw;
     padding-bottom: 2em;
 }
+
 fieldset {
     border: none;
     padding-top: 2rem;
@@ -325,7 +323,7 @@ input[type="submit"] {
     border-color: var(--tertiary-color);
     margin-top: 1em;
     margin-bottom: 1em;
-    min-width: 300px;
+    min-width: 200px;
     cursor: pointer;
 }
 /* END OF CONTACT STYLING */
@@ -338,6 +336,7 @@ footer a:hover {
     color: var(--primary-color);
     text-decoration: underline;
 }
+
 section[id="footer-socials"]{
     padding: 0 1.875rem 1.25rem;
 }
@@ -352,8 +351,8 @@ ul[class="footer-icons"] {
 ul[class="footer-icons"] li {
     margin: 0.5rem;
 }
-
 /* LEGAL SECTION */
+
 section[id="footer-legal"] a {
     color: var(--color-secondary);
 }
@@ -379,3 +378,117 @@ ul[class="footer-legal-items"] li {
 .footer-legal-items li:nth-of-type(2) {
     flex: 1;
 }
+/* END OF DESKTOP STYLING */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--mobile-container);
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #navbar2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 16rem;
+        background-color: var(--secondary-color);
+        padding: 1rem;
+    }
+
+    #navbar2 li {
+        padding: 1.5rem;
+        animation: slideNav 0.3s linear;     
+    }
+
+    @keyframes slideNav {
+        from {
+            transform: translateX(101%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    #navbar2 li a {
+        color: var(--alternate-color);
+    }
+
+    #navbar2 a:hover {
+        color: var(--primary-color);
+    }
+
+    nav button {
+        display: inline-block;
+        cursor: pointer;
+        background-color: transparent;
+        margin-right: 1rem;
+    }
+
+    #menu-btn, nav svg {
+        display: initial;
+    }
+
+    #close-btn {
+        display: none;
+    }
+
+    section[id="home"] .container {
+        gap: 1rem;
+    }
+
+    section[id="phones"] .container {
+        grid-template-columns: minmax(min-content, 1fr)
+        minmax(min-content, 1fr);
+    }
+    
+    section[id="refurbished"] .container {
+        grid-template-columns: minmax(min-content, 1fr)
+        minmax(min-content, 1fr);
+    
+    }
+
+    section[id="faqs"] .container {
+        grid-template-columns: minmax(min-content, 1fr);
+    }
+
+    section[id="contact"] .container {
+        grid-template-columns: 1fr;
+    }
+}
+/* END OF MEDIA QUERIES FOR TABLETS */
+
+@media screen and (max-width: 600px) {
+    section[id="home"] .container {
+        grid-template-columns:  minmax(min-content, 1fr);
+    }
+
+    section[id="phones"] .container {
+        grid-template-columns: inherit;
+    }
+
+    section[id="refurbished"] .container {
+        grid-template-columns: inherit;
+    }
+
+    section[id="faqs"] .container {
+        grid-template-columns: inherit;
+    }
+
+    section[id="contact"] .container {
+        grid-template-columns: inherit;
+    }   
+}
+/* END OF MEDIA QUERIES FOR PHONES */

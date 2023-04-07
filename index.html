@@ -10,35 +10,40 @@
     <meta name="title" content="Phone Reseller Project">
     <meta name="description" content="This is a landing page project, made by cgathua">
 
-    <!--GOOGLE FONTS-->
-
-    <!--FONT AWESOME ICONS-->
-    <script src="https://kit.fontawesome.com/4a00a82b9f.js" crossorigin="anonymous"></script>
-
     <!--STYLESHEET-->
     <link rel="stylesheet" href="style.css">
+
+    <!--FONT AWESOME ICONS-->
+    <script defer src="https://kit.fontawesome.com/4a00a82b9f.js" crossorigin="anonymous"></script>
 </head>
 <!--END OF HEAD-->
 <body>
+<main>
     <div class="container">
         <header>
             <a href="#home" class="logo">LOGO</a>
             <nav>
-                <ul>
+                <ul id="navbar">
                     <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#phones">Phones</a></li>
                     <li><a href="#refurbished">Why Buy Refurbished?</a></li>
                     <li><a href="#faqs">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" aria-label="shopping cart"><i class="fa-solid fa-cart-plus fa-xl cart-btn"></i></a></li>
                 </ul>
-                <div class="cart-btn">
-                    <a href="#" aria-label="shopping cart"><i class="fa-solid fa-cart-plus fa-xl"></i></a>
-                    <div class="cart-items">0</div>
-                </div>
-                <button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
-                <button id="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                <!--END OF DESKTOP NAV-->
+                <ul id="navbar2">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#phones">Phones</a></li>
+                    <li><a href="#refurbished">Why Buy Refurbished?</a></li>
+                    <li><a href="#faqs">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" aria-label="shopping cart"><i class="fa-solid fa-cart-plus fa-xl cart-btn"></i></a></li>
+                </ul>
+                    <button id="menu-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0F0F0F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+                    <button id="close-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0F0F0F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
             </nav>
-            <!--END OF DESKTOP NAVIGATION-->
+            <!--END OF MOBILE/TABLET NAVIGATION-->
         </header>
     </div>
     <!--END OF HEADER-->
@@ -79,7 +84,7 @@
                 <div class="img-container">
                     <source srcset="./images/pexels-brett-jordan-2643698.avif" type="image/avif" class="product-img">
                     <img src="./images/pexels-brett-jordan-2643698.jpg" width="640" height="427" alt="iphone 6" loading="lazy" class="product-img">
-                    <button class="bag-btn" data-id="1"><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+                    <button class="bag-btn"><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
                 </div>
                 <h3>iphone 6</h3>
                 <figcaption><a href="#" class="btn btn-primary">$299</a></figcaption>   
@@ -89,7 +94,7 @@
                 <div class="img-container">
                     <source srcset="./images/pexels-pixabay-257923.avif" type="image/avif" class="product-img">
                     <img src="./images/pexels-pixabay-257923.jpg" width="640" height="427" alt="iphone 5" loading="lazy" class="product-img">
-                    <button class="bag-btn" data-id="1"><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+                    <button class="bag-btn"><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
                 </div>
                 <h3>iphone 5</h3>
                 <figcaption><a href="#" class="btn btn-primary">$199</a></figcaption>    
@@ -128,36 +133,6 @@
         </div>
     </section>
     <!--END OF PHONES SECTION--> 
-    <section class="cart-overlay">
-        <div class="cart">
-            <span class="close-cart">
-                <i class="fa-solid fa-xmark fa-xl"></i>
-            </span>
-            <h2>your cart</h2>
-            <div class="container">
-                <figure class="cart-content"> 
-                    <div class="cart-item">
-                        <source srcset="images/pexels-thiago-japyassu-1069798.avif" type="image/avif">
-                        <img src="images/pexels-thiago-japyassu-1069798.jpg" width="640" height="427" alt="iphone x">
-                    </div>
-                    <h3>iphone X</h3>
-                    <figcaption>$699</figcaption>
-                    <h4 class="remove-item">remove</h4>
-                    <div>
-                        <i class="fa-solid fa-plus"></i>
-                        <input type="number" class="item-amount">
-                        <i class="fa-solid fa-minus"></i>
-                    </div>
-                </figure> 
-            </div>
-            <!--END OF CART ITEM-->
-            <div class="cart-footer">
-                <h3>your total : $ <span class="cart-total">0</span></h3>
-                <button class="clear-cart btn banner-btn">clear cart</button>
-            </div>
-        </div>
-    </section>
-    <!--END OF CART OVERLAY SECTION-->
     <section id="refurbished">
         <h2>Why Buy Refurbished?</h2>
         <div class="container">
@@ -318,5 +293,6 @@
     <!--END OF FOOTER SECTION-->  
     
     <script src="./index.js"></script>
+</main>
 </body>
 </html>

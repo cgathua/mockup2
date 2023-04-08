@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!--FONT AWESOME ICONS-->
-    <script defer src="https://kit.fontawesome.com/4a00a82b9f.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4a00a82b9f.js" crossorigin="anonymous"></script>
 </head>
 <!--END OF HEAD-->
 <body>
@@ -29,7 +29,7 @@
                     <li><a href="#refurbished">Why Buy Refurbished?</a></li>
                     <li><a href="#faqs">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#" aria-label="shopping cart"><i class="fa-solid fa-cart-plus fa-xl cart-btn"></i></a></li>
+                    <li><a href="#" aria-label="shopping cart"><i class="fa-solid fa-cart-plus fa-xl cart-btn" aria-hidden="true"></i></a></li>
                 </ul>
                 <!--END OF DESKTOP NAV-->
                 <ul id="navbar2">
@@ -51,7 +51,7 @@
             <article class="info">
                 <div class="delivery">
                     <small>Free shipping</small>
-                    <i class="fa-solid fa-truck"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0F0F0F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-truck"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
                 </div>
                 <h1>Refurbished Phones</h1>
                 <p>The online store for refurbished iphones, 90 day warranty included.</p>
@@ -102,7 +102,7 @@
             <figure class="product">
                 <div class="img-container">
                     <source srcset="./images/pexels-rajat-yadav-15458049.avif" type="image/avif" class="product-img">
-                    <img src="./images/pexels-rajat-yadav-15458049.jpg" width="640" height="427" alt="iphone pro" loading="lazy" class="product-img">
+                    <img src="./images/pexels-rajat-yadav-15458049.jpg" width="640" height="427" alt="iphone 13" loading="lazy" class="product-img">
                     <button class="bag-btn" data-id="1"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>add to cart</button>
                 </div>
                 <h3>iphone 13</h3>
@@ -229,15 +229,17 @@
             <form action="contact-form" method="post" class="form">
                 <fieldset>
                     <legend>
-                        <label for="first name"> First Name <input type="text" name="First Name" placeholder="First Name" required></label>
-                        <label for="last name"> Last Name <input type="text" name="Last Name" placeholder="Last Name" required></label>
-                        <label for="email"> Email <input type="email" name="Email Address" placeholder="Enter Your Email" required></label>
+                        <label id="first name"> First Name <input type="text" name="First Name" placeholder="First Name" aria-labelledby="first name" required></label>
+                        <label id="last name"> Last Name <input type="text" name="Last Name" placeholder="Last Name" aria-labelledby="last name" required></label>
+                        <label id="email"> Email <input type="email" name="Email Address" placeholder="Enter Your Email" aria-labelledby="email" required></label>
                     </legend>
                 </fieldset>
                 <fieldset>
-                    <label for="message"> Message
-                        <textarea rows="7" placeholder="Message....."></textarea>
-                    </label>
+                    <legend>
+                        <label id="message"> Message
+                        <textarea rows="7" placeholder="Message....." aria-labelledby="message"></textarea>
+                        </label>
+                    </legend>
                 </fieldset>
                 <input type="submit" id="submit" value="Submit" class="btn btn-primary">
             </form>

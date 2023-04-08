@@ -4,7 +4,8 @@
     --primary-color: #BFBFBF;
     --secondary-color: #0F0F0F;
     --tertiary-color: #575757;
-    --alternate-color: #fff;
+    --alternate-color: #FFFFFF;
+    --active-color: #A32B0A;
     --desktop-container: 80%;
     --mobile-container: 90%;
     --transition: all 0.3s linear;
@@ -84,7 +85,7 @@ section h2 {
     margin-bottom: 4rem;
 }
  
-#menu-btn,#close-btn,#navbar2,nav svg {
+#menu-btn, #navbar2, nav svg {
     display: none;
 }
 /* END OF GENERAL STYLING */
@@ -120,19 +121,19 @@ header {
 }
 
 .logo:hover {
-    color: var(--primary-color);
+    color: var(--active-color);
 }
 
 #navbar li a:hover,
 #navbar li a.active {
-    color: var(--primary-color);
+    color: var(--active-color);
 }
 
 #navbar li a.active::after {
     content: "";
     width: 30%;
     height: 2px;
-    background-color: var(--primary-color);
+    background-color: var(--active-color);
     position: absolute;
     bottom: -2px;
     left: 20px;
@@ -157,6 +158,13 @@ article[class="info"] .delivery {
 article[class="info"] p {
     font-size: larger;
     margin: 1rem auto;
+}
+
+.delivery svg {
+    height: 1rem;
+    width: 1rem;
+    top: .125em;
+    position: relative;
 }
 /* END OF HOME STYLING */
 
@@ -412,7 +420,6 @@ ul[class="footer-legal-items"] li {
         padding: 1.5rem;  
     }
 
-
     #navbar2 li a {
         color: var(--alternate-color);
     }
@@ -434,10 +441,6 @@ ul[class="footer-legal-items"] li {
 
     #menu-btn, nav svg {
         display: initial;
-    }
-
-    #close-btn {
-        display: none;
     }
     /*END OF HAMBURGER MENU */
 
@@ -467,6 +470,9 @@ ul[class="footer-legal-items"] li {
 /* END OF MEDIA QUERIES FOR TABLETS */
 
 @media screen and (max-width: 600px) {
+    section{
+        padding: 8rem 0;
+    }
     section[id="home"] .container {
         grid-template-columns:  minmax(min-content, 1fr);
     }

@@ -284,7 +284,7 @@ label {
 .form {
     margin: 0 auto;
     max-width: 500px;
-    min-width: 200px;
+    min-width: 250px;
     width: 60vw;
     padding-bottom: 2em;
 }
@@ -323,7 +323,7 @@ input[type="submit"] {
     border-color: var(--tertiary-color);
     margin-top: 1em;
     margin-bottom: 1em;
-    min-width: 200px;
+    min-width: 250px;
     cursor: pointer;
 }
 /* END OF CONTACT STYLING */
@@ -400,27 +400,18 @@ ul[class="footer-legal-items"] li {
         justify-content: flex-start;
         position: fixed;
         top: 0;
-        left: 0;
+        left: -100%;
         height: 100vh;
         width: 16rem;
         background-color: var(--secondary-color);
         padding: 1rem;
+        transition: 0.3s;
     }
 
     #navbar2 li {
-        padding: 1.5rem;
-        animation: slideNav 0.3s linear;     
+        padding: 1.5rem;  
     }
 
-    @keyframes slideNav {
-        from {
-            transform: translateX(101%);
-        }
-
-        to {
-            transform: translateX(0);
-        }
-    }
 
     #navbar2 li a {
         color: var(--alternate-color);
@@ -428,6 +419,10 @@ ul[class="footer-legal-items"] li {
 
     #navbar2 a:hover {
         color: var(--primary-color);
+    }
+
+    #navbar2.active {
+        left: 0;
     }
 
     nav button {
@@ -444,6 +439,7 @@ ul[class="footer-legal-items"] li {
     #close-btn {
         display: none;
     }
+    /*END OF HAMBURGER MENU */
 
     section[id="home"] .container {
         gap: 1rem;
@@ -465,7 +461,7 @@ ul[class="footer-legal-items"] li {
     }
 
     section[id="contact"] .container {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(min-content, 1fr);
     }
 }
 /* END OF MEDIA QUERIES FOR TABLETS */

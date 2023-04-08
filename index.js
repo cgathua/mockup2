@@ -1,3 +1,4 @@
+"use strict";
 const faqs = document.querySelectorAll('.faq');
 
 faqs.forEach((faq) => {
@@ -12,24 +13,19 @@ faqs.forEach((faq) => {
 });
 // END OF FAQ JAVASCRIPT
 
-const menuBtn = document.getElementById('menu-btn');
-const closeBtn = document.getElementById('close-btn');
-const menu = document.getElementById('navbar2');
-//end of open & close nav menu
+const menuBtn = document.querySelector('#menu-btn');
+const navMenu = document.querySelector('#navbar2');
 
-menuBtn.addEventListener('click', () => {
-    menu.style.display = 'block';
-    menuBtn.style.display = 'none';
-    closeBtn.style.display = 'inline-block';
-   
-}); 
- //end of open sidebar
+menuBtn.addEventListener('click', () =>{
+    menuBtn.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
 
- closeBtn.addEventListener('click', () => {
-    menu.style.display = 'none';
-    closeBtn.style.display = 'none';
-    menuBtn.style.display ='inline-block';
-}); //end of close sidebar
+document.querySelectorAll('.nav-link').forEach(n => n.addEventListener
+    ('click', () => {
+        menuBtn.classList.remove('active');
+        navMenu.classList.remove('active');
+    }))
 // END OF HAMBURGER MENU
 
 const navItems = document.querySelectorAll('nav ul li');

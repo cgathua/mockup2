@@ -50,8 +50,3 @@ navItems.forEach(item => {
 }) //add active class to clicked nav item
 // END OF DESKTOP ACTIVE CLASS LINKS
 
-
-
-
-
- 

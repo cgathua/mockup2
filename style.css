@@ -5,7 +5,7 @@
     --secondary-color: #0F0F0F;
     --tertiary-color: #575757;
     --alternate-color: #FFFFFF;
-    --active-color: #A32B0A;
+    --active-color: #2E2EFF;
     --desktop-container: 80%;
     --mobile-container: 90%;
     --transition: all 0.3s linear;
@@ -216,23 +216,36 @@ section[id="phones"] h3 {
 /* END OF PHONES STYLING */
 
 
-section[id="refurbished"] .container {
+section[id="refurbished"] {
     background-image: url("images/pexels-david-bartus-963278.avif");
     background-color: var(--alternate-color);
-    height: 50vh;
+    height: 100%;
+    width: 80%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    align-items: center;
+    margin: 0 auto;
 }
 
 section[id="refurbished"] .text, .p-text, .fa-money-check-dollar, 
-.fa-screwdriver-wrench, .fa-globe {
+.fa-screwdriver-wrench, .fa-globe{
     color: var(--alternate-color);
 }
 
+section[id="refurbished"] h2 {
+    background-color: var(--secondary-color);
+    color: var(--alternate-color);
+    max-width: fit-content;
+    padding: 0 0.5rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+
+}
 section[id="refurbished"] .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: minmax(min-content, 1fr)
+    minmax(min-content, 1fr) minmax(min-content, 1fr);
     gap: 1rem;
     align-items: center;
 }
@@ -241,6 +254,7 @@ article[class="refurb"] {
     padding: 1rem;
     background-color: var(--secondary-color);
     text-align: center;
+    align-items: center;
 }
 /* END OF REFURBISHED STYLING */
 
@@ -471,8 +485,9 @@ ul[class="footer-legal-items"] li {
 
 @media screen and (max-width: 600px) {
     section{
-        padding: 8rem 0;
+        padding: 5rem 0;
     }
+
     section[id="home"] .container {
         grid-template-columns:  minmax(min-content, 1fr);
     }
@@ -491,7 +506,7 @@ ul[class="footer-legal-items"] li {
 
     section[id="contact"] .container {
         grid-template-columns: inherit;
-    }   
+    } 
 }
 /* END OF MEDIA QUERIES FOR PHONES */
 

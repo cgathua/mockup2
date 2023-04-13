@@ -85,9 +85,10 @@ section h2 {
     margin-bottom: 4rem;
 }
  
-#menu-btn, #navbar2, nav svg {
+#menu-btn, #navbar2, #navbar2 svg {
     display: none;
 }
+
 /* END OF GENERAL STYLING */
 
 
@@ -228,8 +229,7 @@ section[id="refurbished"] {
     margin: 0 auto;
 }
 
-section[id="refurbished"] .text, .p-text, .fa-money-check-dollar, 
-.fa-screwdriver-wrench, .fa-globe{
+section[id="refurbished"] .text, .p-text {
     color: var(--alternate-color);
 }
 
@@ -285,7 +285,7 @@ section[id="faqs"] .container {
     max-height: fit-content;
 }
 
-.faq.active .fa-chevron-down {
+.faq.active .question svg {
     transform: rotate(180deg);
 }
 /* END OF FAQS STYLING */
@@ -348,6 +348,10 @@ input[type="submit"] {
     min-width: 250px;
     cursor: pointer;
 }
+
+ul[class="contact_details"] li, h4 {
+    padding: 0.5rem 0;
+}
 /* END OF CONTACT STYLING */
 
 footer a {
@@ -372,6 +376,10 @@ ul[class="footer-icons"] {
 
 ul[class="footer-icons"] li {
     margin: 0.5rem;
+}
+
+.footer-icons svg:hover {
+    background-color: var(--primary-color);
 }
 /* LEGAL SECTION */
 
@@ -453,9 +461,10 @@ ul[class="footer-legal-items"] li {
         margin-right: 1rem;
     }
 
-    #menu-btn, nav svg {
+    #menu-btn, nav svg, #navbar2 svg {
         display: initial;
     }
+
     /*END OF HAMBURGER MENU */
 
     section[id="home"] .container {
@@ -478,7 +487,7 @@ ul[class="footer-legal-items"] li {
     }
 
     section[id="contact"] .container {
-        grid-template-columns: minmax(min-content, 1fr);
+        grid-template-columns: inherit;
     }
 }
 /* END OF MEDIA QUERIES FOR TABLETS */

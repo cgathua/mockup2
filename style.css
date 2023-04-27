@@ -218,7 +218,7 @@ section[id="phones"] h3 {
 
 
 section[id="refurbished"] {
-    background-image: url("images/pexels-david-bartus-963278.avif");
+    background-image: url("");
     background-color: var(--alternate-color);
     height: 100%;
     width: 80%;
@@ -228,6 +228,14 @@ section[id="refurbished"] {
     align-items: center;
     margin: 0 auto;
 }
+
+#refurbished {
+    background-image: url('images/pexels-david-bartus-963278.jpg');
+  
+    @supports (background-image: url('images/pexels-david-bartus-963278.avif')) {
+      background-image: url('images/pexels-david-bartus-963278.avif');
+    }
+} /* css fallbacks for background image */
 
 section[id="refurbished"] .text, .p-text {
     color: var(--alternate-color);

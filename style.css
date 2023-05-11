@@ -288,7 +288,7 @@ article[class="refurb"] {
     padding: 1rem;
     background-color: var(--secondary-color);
     text-align: center;
-    align-items: center;
+    place-items: center;
 }
 /* END OF REFURBISHED STYLING */
 

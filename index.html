@@ -12,6 +12,9 @@
 
     <!--STYLESHEET-->
     <link rel="stylesheet" href="style.css">
+
+    <!--DEFERED JAVASCRIPT-->
+    <script defer src="./index.js"></script>
 </head>
 <!--END OF HEAD-->
 <body>
@@ -233,8 +236,8 @@
                 </fieldset>
                 <fieldset>
                     <legend>
-                        <label id="message"> Message
-                        <textarea rows="7" placeholder="Message....." aria-labelledby="message"></textarea>
+                        <label for="comments"> Message
+                        <textarea id="comments" rows="7" placeholder="Message....." aria-labelledby="comments" autocomplete="off"></textarea>
                         </label>
                     </legend>
                 </fieldset>
@@ -289,8 +292,6 @@
         <!--END OF LEGAL SECTION-->
     </footer> 
     <!--END OF FOOTER SECTION-->  
-    
-    <script src="./index.js"></script>
 </main>
 </body>
 </html>

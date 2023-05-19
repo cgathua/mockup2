@@ -56,6 +56,7 @@ h1, h2, h3, h4 {
 h1 {
     
     color: var(--alternate-color);
+    font-size: 2rem;
 }
 
 .btn {
@@ -449,10 +450,6 @@ ul[class="footer-legal-items"] li {
         width: var(--desktop-container);
     }
 
-    h1 {
-        font-size: 1.5rem;
-    }
-
     #navbar {
         display: none;
     }
@@ -523,6 +520,10 @@ ul[class="footer-legal-items"] li {
     section[id="contact"] .container {
         grid-template-columns: inherit;
     }
+
+    h1 {
+        font-size: 1.5rem;
+    }
 }
 /* END OF MEDIA QUERIES FOR TABLETS */
 
@@ -553,6 +554,10 @@ ul[class="footer-legal-items"] li {
     section[id="contact"] .container {
         grid-template-columns: inherit;
     } 
+    
+    h1 {
+        font-size: initial;
+    }
 }
 /* END OF MEDIA QUERIES FOR PHONES */
 

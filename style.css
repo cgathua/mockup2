@@ -9,7 +9,6 @@
     --desktop-container: 80%;
     --mobile-container: 90%;
     --transition: all 0.3s linear;
-    --accordion-content-height: 300px;
 }
 
 * {
@@ -50,7 +49,10 @@ a {
     transition: var(--transition);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     color: var(--secondary-color);
 }
 
@@ -85,12 +87,19 @@ section h2 {
     text-align: center;
     margin-bottom: 4rem;
 }
- 
-#menu-btn, #navbar2, #navbar2 svg {
+
+#menu-btn,
+#navbar2,
+#navbar2 svg {
     display: none;
 }
 
-html, body {width: auto!important; overflow-x: hidden!important}
+html,
+body {
+    width: auto !important;
+    overflow-x: hidden !important
+}
+
 /* END OF GENERAL STYLING */
 
 
@@ -116,7 +125,8 @@ header {
 }
 
 #navbar li {
-    position: relative; /* this is for active list */
+    position: relative;
+    /* this is for active list */
 }
 
 .logo {
@@ -144,6 +154,7 @@ header {
     bottom: -2px;
     left: 20px;
 }
+
 /* END OF HEADER STYLING */
 
 section[id="home"] {
@@ -152,8 +163,7 @@ section[id="home"] {
 
 section[id="home"] .container {
     display: grid;
-    grid-template-columns:  minmax(min-content, 30%)
-    minmax(min-content, 70%);
+    grid-template-columns: minmax(min-content, 30%) minmax(min-content, 70%);
     place-items: center;
     gap: 2rem;
 }
@@ -190,12 +200,14 @@ article[class="info"] a {
 article[class="info"] a:hover {
     color: var(--secondary-color);
 }
+
 .delivery_svg {
     height: 1rem;
     width: 1rem;
     top: .125em;
     position: relative;
 }
+
 /* END OF HOME STYLING */
 
 section[id="phones"] .container {
@@ -244,6 +256,7 @@ section[id="phones"] h3 {
 .img-container:hover .product-img {
     opacity: 0.5;
 }
+
 /* END OF PHONES STYLING */
 
 section[id="refurbished"] {
@@ -252,12 +265,14 @@ section[id="refurbished"] {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(./images/pexels-david-bartus-963278.jpg);
+
     @supports (background-image: url('./images/pexels-david-bartus-963278.webp')) {
         background-image: url('./images/pexels-david-bartus-963278.webp');
-    }  
+    }
 }
 
-section[id="refurbished"] .text, .p-text {
+section[id="refurbished"] .text,
+.p-text {
     color: var(--alternate-color);
 }
 
@@ -270,10 +285,10 @@ section[id="refurbished"] h2 {
     margin-bottom: 5rem;
 
 }
+
 section[id="refurbished"] .container {
     display: grid;
-    grid-template-columns: minmax(min-content, 1fr)
-    minmax(min-content, 1fr) minmax(min-content, 1fr);
+    grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr);
     gap: 1rem;
     place-items: center;
 }
@@ -284,6 +299,7 @@ article[class="refurb"] {
     text-align: center;
     place-items: center;
 }
+
 /* END OF REFURBISHED STYLING */
 
 section[id="faqs"] .container {
@@ -332,8 +348,7 @@ section[id="faqs"] .container {
 
 section[id="contact"] .container {
     display: grid;
-    grid-template-columns: minmax(min-content, 1fr)
-    minmax(min-content, 1fr);
+    grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
     gap: 4rem;
     place-items: center;
 }
@@ -357,7 +372,10 @@ fieldset {
     padding-bottom: 2rem;
 }
 
-input, textarea, select, legend {
+input,
+textarea,
+select,
+legend {
     width: 100%;
     margin: 10px 0 0 0;
     min-height: 2em;
@@ -369,7 +387,8 @@ input, textarea, select, legend {
     vertical-align: middle;
 }
 
-input, textarea {
+input,
+textarea {
     background-color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
     color: var(--alternate-color);
@@ -389,9 +408,11 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-ul[class="contact_details"] li, h4 {
+ul[class="contact_details"] li,
+h4 {
     padding: 0.5rem 0;
 }
+
 /* END OF CONTACT STYLING */
 
 footer a {
@@ -403,7 +424,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-section[id="footer-socials"]{
+section[id="footer-socials"] {
     padding: 0 1.875rem 1.25rem;
 }
 
@@ -421,6 +442,7 @@ ul[class="footer-icons"] li {
 .footer-icons svg:hover {
     fill: var(--primary-color);
 }
+
 /* LEGAL SECTION */
 
 section[id="footer-legal"] a {
@@ -431,7 +453,7 @@ section[id="footer-legal"] {
     padding: 0.9375rem 1.875rem;
     background-color: var(--color-primary);
     color: var(--color-secondary);
-    
+
 }
 
 ul[class="footer-legal-items"] {
@@ -442,12 +464,13 @@ ul[class="footer-legal-items"] {
 
 ul[class="footer-legal-items"] li {
     margin: 0.125rem 0.625rem;
-    white-space: nowrap;   
+    white-space: nowrap;
 }
 
 .footer-legal-items li:nth-of-type(2) {
     flex: 1;
 }
+
 /* END OF DESKTOP STYLING */
 
 @media screen and (max-width: 1024px) {
@@ -475,7 +498,7 @@ ul[class="footer-legal-items"] li {
     }
 
     #navbar2 li {
-        padding: 1.5rem;  
+        padding: 1.5rem;
     }
 
     #navbar2 li a {
@@ -497,7 +520,9 @@ ul[class="footer-legal-items"] li {
         margin-right: 1rem;
     }
 
-    #menu-btn, nav svg, #navbar2 svg {
+    #menu-btn,
+    nav svg,
+    #navbar2 svg {
         display: initial;
     }
 
@@ -508,14 +533,12 @@ ul[class="footer-legal-items"] li {
     }
 
     section[id="phones"] .container {
-        grid-template-columns: minmax(min-content, 1fr)
-        minmax(min-content, 1fr);
+        grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
     }
-    
+
     section[id="refurbished"] .container {
-        grid-template-columns: minmax(min-content, 1fr)
-        minmax(min-content, 1fr);
-    
+        grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
+
     }
 
     section[id="faqs"] .container {
@@ -531,18 +554,20 @@ ul[class="footer-legal-items"] li {
         font-size: 1.5rem;
     }
 }
+
 /* END OF MEDIA QUERIES FOR TABLETS */
 
 @media screen and (max-width: 600px) {
     .container {
         width: var(--mobile-container);
     }
-    section{
+
+    section {
         padding: 5rem 0;
     }
 
     section[id="home"] .container {
-        grid-template-columns:  minmax(min-content, 1fr);
+        grid-template-columns: minmax(min-content, 1fr);
     }
 
     section[id="phones"] .container {
@@ -560,11 +585,11 @@ ul[class="footer-legal-items"] li {
 
     section[id="contact"] .container {
         grid-template-columns: inherit;
-    } 
-    
+    }
+
     h1 {
         font-size: initial;
     }
 }
-/* END OF MEDIA QUERIES FOR PHONES */
 
+/* END OF MEDIA QUERIES FOR PHONES */

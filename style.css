@@ -323,7 +323,7 @@ section[id="faqs"] .container {
 .answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 400ms cubic-bezier(0.87, 0, 0.13, 1);
+    transition: max-height 300ms cubic-bezier(0.87, 0, 0.13, 1);
 }
 
 .answer p {
@@ -340,7 +340,7 @@ section[id="faqs"] .container {
 
 .feather-chevron-down {
     min-width: 1rem;
-    transition: transform 400ms cubic-bezier(0.87, 0, 0.13, 1);
+    transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
 }
 
 

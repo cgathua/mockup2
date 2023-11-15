@@ -9,6 +9,7 @@
     --desktop-container: 80%;
     --mobile-container: 90%;
     --transition: all 0.3s linear;
+    --accordion-content-height: 300px;
 }
 
 * {
@@ -122,6 +123,7 @@ header {
     font-size: 1.5rem;
     font-weight: bolder;
     margin-left: 1rem;
+    cursor: pointer;
 }
 
 .logo:hover {
@@ -286,8 +288,8 @@ article[class="refurb"] {
 
 section[id="faqs"] .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
+    grid-template-columns: minmax(min-content, 1fr);
+    width: 37.5rem;
 }
 
 .faq {
@@ -305,15 +307,27 @@ section[id="faqs"] .container {
 .answer {
     max-height: 0;
     overflow: hidden;
+    transition: max-height 400ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.answer p {
+    padding-top: 0.5rem;
 }
 
 .faq.active .answer {
-    max-height: fit-content;
+    max-height: 300px;
 }
 
-.faq.active .question svg {
+.faq.active .question .feather-chevron-down {
     transform: rotate(180deg);
 }
+
+.feather-chevron-down {
+    min-width: 1rem;
+    transition: transform 400ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+
 /* END OF FAQS STYLING */
 
 section[id="contact"] .container {
@@ -457,7 +471,7 @@ ul[class="footer-legal-items"] li {
         width: 16rem;
         background-color: var(--secondary-color);
         padding: 1rem;
-        transition: 0.3s;
+        transition: var(--transition);
     }
 
     #navbar2 li {
@@ -506,6 +520,7 @@ ul[class="footer-legal-items"] li {
 
     section[id="faqs"] .container {
         grid-template-columns: minmax(min-content, 1fr);
+        width: 37.5rem;
     }
 
     section[id="contact"] .container {
@@ -540,6 +555,7 @@ ul[class="footer-legal-items"] li {
 
     section[id="faqs"] .container {
         grid-template-columns: inherit;
+        width: 90%;
     }
 
     section[id="contact"] .container {

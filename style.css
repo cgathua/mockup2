@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
-
 :root {
+
     --primary-color: #BFBFBF;
     --secondary-color: #000000;
     --tertiary-color: #575757;
@@ -25,7 +24,8 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    font-weight: normal;
     min-height: 100vh;
     line-height: 1.75;
     color: var(--secondary-color);
@@ -58,6 +58,7 @@ h4 {
 
 h1 {
     color: var(--alternate-color);
+    font-weight: lighter;
 }
 
 .btn {
@@ -86,6 +87,7 @@ section {
 section h2 {
     text-align: center;
     margin-bottom: 4rem;
+    font-weight: lighter;
 }
 
 #menu-btn,
@@ -96,8 +98,8 @@ section h2 {
 
 html,
 body {
-    width: auto !important;
-    overflow-x: hidden !important
+    width: auto;
+    overflow-x: hidden;
 }
 
 /* END OF GENERAL STYLING */
@@ -131,7 +133,6 @@ header {
 
 .logo {
     font-size: 1.5rem;
-    font-weight: bolder;
     margin-left: 1rem;
     cursor: pointer;
 }
@@ -212,7 +213,7 @@ article[class="info"] a:hover {
 
 section[id="phones"] .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
     gap: 2rem;
     text-align: center;
     place-items: center;
@@ -288,7 +289,7 @@ section[id="refurbished"] h2 {
 
 section[id="refurbished"] .container {
     display: grid;
-    grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr);
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
     gap: 1rem;
     place-items: center;
 }
@@ -348,7 +349,7 @@ section[id="faqs"] .container {
 
 section[id="contact"] .container {
     display: grid;
-    grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
     gap: 4rem;
     place-items: center;
 }
@@ -517,6 +518,7 @@ ul[class="footer-legal-items"] li {
         display: inline-block;
         cursor: pointer;
         background-color: transparent;
+        margin: 0.5rem auto;
         margin-right: 1rem;
     }
 
@@ -533,11 +535,11 @@ ul[class="footer-legal-items"] li {
     }
 
     section[id="phones"] .container {
-        grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
     }
 
     section[id="refurbished"] .container {
-        grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
 
     }
 

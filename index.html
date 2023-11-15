@@ -30,7 +30,7 @@
                     <li><a href="#refurbished">Why Buy Refurbished?</a></li>
                     <li><a href="#faqs">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a aria-hidden="true">
+                    <li><a href="#phones">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="#0F0F0F" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-shopping-cart">
@@ -48,16 +48,16 @@
                     <li><a href="#refurbished" class="nav-link">Why Buy Refurbished?</a></li>
                     <li><a href="#faqs" class="nav-link">FAQ</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="#" class="nav-link" aria-hidden="true">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
-                                <circle cx="9" cy="21" r="1"></circle>
-                                <circle cx="20" cy="21" r="1"></circle>
-                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                            </svg>
-                        </a>
-                    </li>
+                    <li aria-label="svg"><a href="#phones">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg> cart
+                    </a>
+                </li>
                 </ul>
                 </ul>
                 <button id="menu-btn" aria-label="menu" aria-haspopup="true" aria-expanded="false">
@@ -97,7 +97,7 @@
                 <picture class="home-image">
                     <source media="(max-width: 400px)" srcset="./images/pexels-tyler400w.webp" type="image/webp">
                     <source media="(max-width: 600px)" srcset="./images/pexels-tyler600w.webp" type="image/webp">
-                    <img src="./images/pexels-tyler-lastovich-719399.jpg" width="960" height="701" alt="iphone">
+                    <img fetchpriority="high"  src="./images/pexels-tyler-lastovich-719399.jpg" width="960" height="701" alt="iphone">
                 </picture>
             </div>
         </section>
@@ -236,7 +236,7 @@
                         <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                     </svg>
                     <h3 class="text">Save Money</h3>
-                    <p class="p-text">A refurbished phone is cheaper to buy.</p>
+                    <p class="p-text">A refurbished phone is cheaper to buy, than new.</p>
                 </article>
 
                 <article class="refurb">

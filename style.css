@@ -500,14 +500,25 @@ ul[class="footer-legal-items"] li {
 
     #navbar2 li {
         padding: 1rem;
+        width: 100%;
     }
 
     #navbar2 li a {
-        color: var(--alternate-color);
+        color: var(--primary-color);
+        line-height: 1;
+        font-size: 13px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+        padding: 0 5px;
+        outline: none
     }
 
     #navbar2 a:hover {
-        color: var(--primary-color);
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
     }
 
     #navbar2.active {

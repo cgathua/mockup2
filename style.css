@@ -499,7 +499,7 @@ ul[class="footer-legal-items"] li {
     }
 
     #navbar2 li {
-        padding: 1.5rem;
+        padding: 1rem;
     }
 
     #navbar2 li a {
@@ -514,18 +514,12 @@ ul[class="footer-legal-items"] li {
         left: 0;
     }
 
-    nav button {
+    #menu-btn {
         display: inline-block;
         cursor: pointer;
         background-color: transparent;
         margin: 0.5rem auto;
         margin-right: 1rem;
-    }
-
-    #menu-btn,
-    nav svg,
-    #navbar2 svg {
-        display: initial;
     }
 
     /*END OF HAMBURGER MENU */
